@@ -2,7 +2,7 @@
 <html>
 <style type="text/css">
 	#mydiv {
-		border: 1px solid  #eee;
+		border: 1px solid #eee;
 		background-color: #ddd;
 		width: 500px;
 		height: 600px;
@@ -145,7 +145,7 @@
 	}
 	#line-nose {
 		width: 1.6px;
-		height: 80px;
+		height: 70px;
 		position: relative;
 		margin: 0px auto;
 		background-color: #000;
@@ -162,27 +162,27 @@
 	}
 	.rect-beard-left:nth-child(4) {
 		transform: rotate(15deg);
-		top: 30px;
+		top: 20px;
 	}
 	.rect-beard-right:nth-child(5) {
 		transform: rotate(-15deg);
-		top: 16px;
+		top: 8px;
 	}
 	.rect-beard-left:nth-child(6) {
 		transform: rotate(0deg);
-		top: 60px;
+		top: 50px;
 	}
 	.rect-beard-right:nth-child(7) {
 		transform: rotate(0deg);
-		top: 46px;
+		top: 38px;
 	}
 	.rect-beard-left:nth-child(8) {
 		transform: rotate(-15deg);
-		top: 90px;
+		top: 80px;
 	}
 	.rect-beard-right:nth-child(9) {
 		transform: rotate(15deg);
-		top: 76px;
+		top: 68px;
 	}
 	.rect-beard-right {
 		float: right;
@@ -191,6 +191,88 @@
 		/*border: 2px solid #eee; */
 		position: relative;
 		border-bottom: 2px solid #000;
+	}
+	#rect-mouth-left {
+		width: 210px;
+		height: 80px;
+		border: 2px solid #eee;
+		border-right: 0.8px solid #000;
+		/*background-color: #eee;*/
+		float: left;
+		position: relative;
+		top: -42px;
+		border-color: transparent transparent #000 #000;
+		border-radius: 50% 0 0 50% / 80% 0 0 100%;
+		transform: rotate(-8deg);
+	}
+	#rect-mouth-right {
+		float: right;
+		width: 210px;
+		height: 80px;
+		border: 2px solid #eee;
+		border-left: 0.8px solid #000;
+		/*background-color: #eee;*/
+		position: relative;
+		top: -42px;
+		border-color: transparent #000 #000 transparent;
+		border-radius: 0 50% 50% 0 / 0 80% 100% 0;
+		transform: rotate(8deg);
+	}
+	#rect-mouth-tongue-1 {
+		width: 0;
+		height: 0;
+		border-left: 160px solid transparent;
+		border-right: 160px solid transparent;
+		border-bottom: 23px solid #a20f0f;
+		position: relative;
+		margin: 0 auto;
+		top: 27px;
+	}
+	#rect-mouth-tongue-2 {
+		border: 2px solid black;
+		width: 320px;
+		height: 127px;
+		position: relative;
+		top: 26px;
+		margin: 0 auto;
+		border-radius: 0 0 50% 50% / 0 0 100% 100%;
+		border-color: transparent #000 #000 #000;
+		background-color: #a20f0f;
+	}
+	#little-tongue-1 {
+		float: left;
+		position: relative;
+		left: 59px;
+		top: -37px;
+		border: 2px solid black;
+		width: 100px;
+		height: 30px;
+		border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+		border-color: transparent #000 #000 #000;
+		background-color: orange;
+	}
+	#little-tongue-2 {
+		float: right;
+		position: relative;
+		right: 58px;
+		top: -37px;
+		border: 2px solid black;
+		width: 100px;
+		height: 30px;
+		border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+		border-color: transparent #000 #000 #000;
+		background-color: orange;
+	}
+	#little-tongue-3 {
+		border: 2px solid black;
+		width: 200px;
+		height: 70px;
+		position: relative;
+		top: 53px;
+		margin: 0 auto;
+		border-radius: 0 0 50% 50% / 0 0 100% 100%;
+		border-color: transparent #000 #000 #000;
+		background-color: orange;
 	}
 </style>
 <head>
@@ -216,6 +298,14 @@
 				<div class="rect-beard-left"></div>
 				<div class="rect-beard-right"></div>
 				<div id="line-nose"></div>
+				<div id="rect-mouth-left"></div>
+				<div id="rect-mouth-right"></div>
+				<div id="rect-mouth-tongue-1"></div>
+				<div id="rect-mouth-tongue-2">
+					<div id="little-tongue-1"></div>
+					<div id="little-tongue-2"></div>
+					<div id="little-tongue-3"></div>
+				</div>
 			</div>
 		</div>
 		<div id="rect-neck">
@@ -226,7 +316,6 @@
 				<div class="cir-ring-line"></div>
 			</div>
 		</div>
-		
 	</div>
 </body>
 </html>
