@@ -1,0 +1,273 @@
+#mydiv {
+	border: 1px solid #eee;
+	background-color: #ddd;
+	width: 500px;
+	height: 600px;
+	margin: 0px auto;
+}
+#cir-head {
+	border: 2px solid #000;
+	border-radius: 50%;
+	width: 480px;
+	height: 450px;
+	margin: 0px auto;
+	top: 40%;
+	position: relative;
+	transform: translateY(-50%);
+	background-color: #00abff;
+	z-index: 1;
+}
+#cir-face {
+	border: 2px solid #000;
+	border-radius: 50%;
+	width: 430px;
+	height: 380px;
+	position: absolute;
+	bottom: 0px;
+	left: 25px;
+	background-color: #fff;
+	z-index: 2;
+}
+.cir-eye {
+	display:block;
+	width: 100px;
+	height: 130px;
+	background-color: red;
+	border-radius: 50%  50%  50%  50%  / 50%   50%   50%  50%;
+	background-color: #fff;
+	float: left;
+	border: 2px solid black;
+}
+.cir-eye:nth-child(1) {
+	position: absolute;
+	left: 112.6px;
+	top: -50px;
+}
+.cir-eye:nth-child(2) {
+	position: absolute;
+	right: 112.6px;
+	top: -50px;
+}
+.curve-eye {
+	width: 50px;
+	height: 80px;
+	border: 3px solid ;
+	border-radius: 50% / 80px 80px 0 0;
+	/*transparent 默认颜色，因为border的默认是透明的，所以就看不到了*/
+	border-color: #000 transparent transparent transparent;
+}
+.cir-eye:nth-child(1) > .curve-eye {
+	position: absolute;
+	right: -5px;
+	top: 50px;
+}
+.cir-eye:nth-child(2) > .curve-eye {
+	position: absolute;
+	left: -5px;
+	top: 50px;
+}
+#rect-neck {
+	position: relative;
+	width: 400px;
+	height: 25px;
+	border: 2px solid #000;
+	border-radius: 20px;
+	background-color: #dd1100;
+	z-index: 3;
+	margin: 0px auto;
+}
+#cir-ring {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border: 2px solid #000;
+	background-color: yellow;
+	margin: 0px auto;
+	border-radius: 50%;
+}
+#cir-ring-hole {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #ccc;
+	border: 2px solid #000;
+	position: relative;
+	margin: 0px auto;
+	top: 51%;
+	transform: translateY(-50%);
+	z-index: 0;
+}
+.cir-ring-line {
+	position: relative;
+	margin: 0px auto;
+}
+.cir-ring-line:nth-child(1) {
+	border-bottom: 3px solid #000;
+	width:85px;
+	height: 2px;
+	top: 20px;
+}
+.cir-ring-line:nth-child(2) {
+	border-bottom: 3px solid #000;
+	width:97px;
+	height: 2px;
+	top: 30px;
+}
+.cir-ring-line:nth-child(4) {
+	height:21px;
+	width: 1.6px;
+	background-color: #000;
+	position: relative;
+	bottom: -29px;
+}
+#cir-nose {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 2px solid #000;
+	background-color: #dd1100;
+	position: relative;
+	margin: 0px auto;
+	top:63px;
+}
+#cir-nose-light {
+	width: 10px;
+	height: 10px;
+	border: 1px solid #000;
+	border-radius: 50%;
+	background-color: #fff;
+	position: relative;
+	top: 10px;
+	left: 20px;
+}
+#line-nose {
+	width: 1.6px;
+	height: 70px;
+	position: relative;
+	margin: 0px auto;
+	background-color: #000;
+	top: 26px;
+}
+.rect-beard-left {
+	display: block;
+	width: 150px;
+	height: 10px;
+	/*border: 2px solid #eee;*/
+	position: relative;
+	left: 0px;
+	border-bottom: 2px solid #000;
+}
+.rect-beard-left:nth-child(4) {
+	transform: rotate(15deg);
+	top: 20px;
+}
+.rect-beard-right:nth-child(5) {
+	transform: rotate(-15deg);
+	top: 8px;
+}
+.rect-beard-left:nth-child(6) {
+	transform: rotate(0deg);
+	top: 50px;
+}
+.rect-beard-right:nth-child(7) {
+	transform: rotate(0deg);
+	top: 38px;
+}
+.rect-beard-left:nth-child(8) {
+	transform: rotate(-15deg);
+	top: 80px;
+}
+.rect-beard-right:nth-child(9) {
+	transform: rotate(15deg);
+	top: 68px;
+}
+.rect-beard-right {
+	float: right;
+	width: 150px;
+	height: 10px;
+	/*border: 2px solid #eee; */
+	position: relative;
+	border-bottom: 2px solid #000;
+}
+#rect-mouth-left {
+	width: 210px;
+	height: 80px;
+	border: 2px solid #eee;
+	border-right: 0.8px solid #000;
+	/*background-color: #eee;*/
+	float: left;
+	position: relative;
+	top: -42px;
+	border-color: transparent transparent #000 #000;
+	border-radius: 50% 0 0 50% / 80% 0 0 100%;
+	transform: rotate(-8deg);
+}
+#rect-mouth-right {
+	float: right;
+	width: 210px;
+	height: 80px;
+	border: 2px solid #eee;
+	border-left: 0.8px solid #000;
+	/*background-color: #eee;*/
+	position: relative;
+	top: -42px;
+	border-color: transparent #000 #000 transparent;
+	border-radius: 0 50% 50% 0 / 0 80% 100% 0;
+	transform: rotate(8deg);
+}
+#rect-mouth-tongue-1 {
+	width: 0;
+	height: 0;
+	border-left: 160px solid transparent;
+	border-right: 160px solid transparent;
+	border-bottom: 23px solid #a20f0f;
+	position: relative;
+	margin: 0 auto;
+	top: 27px;
+}
+#rect-mouth-tongue-2 {
+	border: 2px solid black;
+	width: 320px;
+	height: 127px;
+	position: relative;
+	top: 26px;
+	margin: 0 auto;
+	border-radius: 0 0 50% 50% / 0 0 100% 100%;
+	border-color: transparent #000 #000 #000;
+	background-color: #a20f0f;
+}
+#little-tongue-1 {
+	float: left;
+	position: relative;
+	left: 59px;
+	top: -37px;
+	border: 2px solid black;
+	width: 100px;
+	height: 30px;
+	border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+	border-color: transparent #000 #000 #000;
+	background-color: orange;
+}
+#little-tongue-2 {
+	float: right;
+	position: relative;
+	right: 58px;
+	top: -37px;
+	border: 2px solid black;
+	width: 100px;
+	height: 30px;
+	border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+	border-color: transparent #000 #000 #000;
+	background-color: orange;
+}
+#little-tongue-3 {
+	border: 2px solid black;
+	width: 200px;
+	height: 70px;
+	position: relative;
+	top: 53px;
+	margin: 0 auto;
+	border-radius: 0 0 50% 50% / 0 0 100% 100%;
+	border-color: transparent #000 #000 #000;
+	background-color: orange;
+}
